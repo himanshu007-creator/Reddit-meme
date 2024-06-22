@@ -22,10 +22,12 @@ document.onload = fetchMemes().then((data) => {
   document.getElementById("img").src = Src;
   document.getElementById("desc").innerHTML = Title;
 });
+/**
 var Image = document.getElementById("img");
 Image.addEventListener("click", () => {
   window.open(Link, "_blank");
 });
+**/
 
 next.addEventListener("click", () => {
   fetchMemes().then((data) => {
